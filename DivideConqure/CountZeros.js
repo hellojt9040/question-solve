@@ -1,10 +1,11 @@
 // Given an array of 1s and 0s which has all 1s first followed by all 0s, write a function called countZeroes, which returns the number of zeroes in the array.
 // Time Complexity - O(log n)
 
-console.log(countZeroes([1, 1, 1, 1, 0, 0])); // 2
+// console.log(countZeroes([1, 1, 1, 1, 0, 0])); // 2
+console.log(countZeroes([1, 1, 1, 1])); // 2
+//                                   |||
 // countZeroes([1, 0, 0, 0, 0]); // 4
-// |  |  |
-console.log(countZeroes([1, 0, 0, 0, 0])); // 3
+// console.log(countZeroes([1, 0, 0, 0, 0])); // 3
 // countZeroes([1, 1, 1, 1]); // 0
 
 function countZeroes(arr) {
@@ -12,18 +13,16 @@ function countZeroes(arr) {
   let right = arr.length - 1;
   if (arr[left] === 1 && arr[right] === 1) return 0;
   if (arr[left] === 0 && arr[right] === 0) return arr.length;
-  let middle;
-  while (left < right) {
-    // find middle
+  while (left <= right) {
     if (arr[left] === 1 && arr[left + 1] === 0) {
       return right - left;
     }
-    middle = Math.floor((left + right) / 2);
-    debugger;
+
+    let middle = Math.floor((left + right) / 2);
     if (arr[middle] !== 0) {
-      left = middle;
+      left = middle + 1;
     } else {
-      right = middle;
+      right = middle - 1;
     }
   }
 }
