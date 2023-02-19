@@ -8,7 +8,8 @@ import './style.css';
 
 // import './Sort/BubbleSort';
 // import './Sort/SelectionSort';
-import './Sort/InsertionSort';
+// import './Sort/InsertionSort';
+import './Sort/MergeSort';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
