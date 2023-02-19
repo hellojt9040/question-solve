@@ -145,7 +145,7 @@ list1.push(5).push(10).push(15).push(20);
 // console.log(list1.insert('am 1 now', 1));
 // console.log(list1.get(0));
 // console.log('inserted',list1.insert('new', -1))
-// console.log('removed', list1.remove(4));
+console.log('removed', list1.remove(200));
 
-console.log(list1.reverse());
+// console.log(list1.reverse());
 console.log(list1);

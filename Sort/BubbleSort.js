@@ -1,9 +1,13 @@
+avg and worst O(N2)
+best O(1)
+
+
 // [2,3,7,1,9,4,5]
 //  i   j
-console.log(
-  'bubble sort..',
-  bubbleSortWithComparator([2, 3, 7, 1, 9, 4, 5], ascComp)
-);
+// console.log(
+//   'bubble sort..',
+//   bubbleSortWithComparator([2, 3, 7, 1, 9, 4, 5], ascComp)
+// );
 //  find the bigger one and take that to hte end of arr
 // function bubbleSort(arr) {
 //   for (let i = arr.length - 1; i >= 0; i--) {
@@ -32,11 +36,11 @@ const dscComp = (a, b) => {
   else 0;
 };
 
-// console.log(
-//   'bubble sort..',
-//   bubbleSortWithComparator([2, 3, 7, 1, 9, 4, 5], ascComp)
-// );
-function bubbleSortWithComparator(arr, cb = ascComp) {
+console.log(
+  'bubble sort..',
+  bubbleSortWithComparator([2, 3, 7, 1, 9, 4, 5], dscComp)
+);
+function bubbleSortWithComparator(arr, cb = dscComp) {
   debugger;
   if (typeof cb !== 'function') cb = ascComp;
 

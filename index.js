@@ -6,7 +6,9 @@ import './style.css';
 // import './DivideConqure/sortedFrequency';
 // import './DivideConqure/FindFromRotatedArr';
 
-import './Sort/BubbleSort';
+// import './Sort/BubbleSort';
+// import './Sort/SelectionSort';
+import './Sort/InsertionSort';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
