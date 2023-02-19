@@ -4,8 +4,9 @@ import './style.css';
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/sortedFrequency';
-import './DivideConqure/FindFromRotatedArr';
+// import './DivideConqure/FindFromRotatedArr';
 
+import './Sort/BubbleSort';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
