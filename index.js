@@ -9,7 +9,8 @@ import './style.css';
 // import './Sort/BubbleSort';
 // import './Sort/SelectionSort';
 // import './Sort/InsertionSort';
-import './Sort/MergeSort';
+// import './Sort/MergeSort';
+import './Sort/QuickSort';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
