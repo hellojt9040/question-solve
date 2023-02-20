@@ -10,7 +10,11 @@ import './style.css';
 // import './Sort/SelectionSort';
 // import './Sort/InsertionSort';
 // import './Sort/MergeSort';
-import './Sort/QuickSort';
+// import './Sort/QuickSort';
+
+// import './Stack/Stack';
+import './Stack/StackWIth2Queue';
+// import './Queue/Queue';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
