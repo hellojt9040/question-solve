@@ -13,8 +13,10 @@ import './style.css';
 // import './Sort/QuickSort';
 
 // import './Stack/Stack';
-import './Stack/StackWIth2Queue';
+// import './Stack/StackWIth2Queue';
 // import './Queue/Queue';
+
+import './BST/BST';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
