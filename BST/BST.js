@@ -12,7 +12,10 @@ class BinarySearchTree {
   }
   insert(val) {
     const newNode = new Node(val);
-    if (!this.root) return (this.root = newNode);
+    if (!this.root) {
+      this.root = newNode;
+      return this;
+    }
 
     let current = this.root;
     while (true) {
@@ -53,6 +56,20 @@ class BinarySearchTree {
           return false;
         }
       }
+    }
+  }
+  min(root) {
+    if (root.left) {
+      return this.min(root.left);
+    } else {
+      return root;
+    }
+  }
+  max(root) {
+    if (root.right) {
+      return this.max(root.right);
+    } else {
+      return root;
     }
   }
   bfs() {
@@ -100,16 +117,23 @@ class BinarySearchTree {
 }
 
 const bst = new BinarySearchTree();
-bst.root = new Node(50);
-bst.root.left = new Node(30);
-bst.root.left.left = new Node(25);
-bst.root.left.right = new Node(35);
-bst.root.right = new Node(80);
-bst.root.right.left = new Node(70);
-bst.root.right.right = new Node(90);
-console.log(bst.find(30));
-console.log('BFS', bst.bfs());
-console.log('DFS_PRE_ORDER', bst.dfs_preOrder());
-console.log('DFS_IN_ORDER', bst.dfs_inOrder());
-console.log('DFS_POST_ORDER', bst.dfs_postOrder());
+bst
+  .insert(22)
+  .insert(49)
+  .insert(85)
+  .insert(66)
+  .insert(95)
+  .insert(90)
+  .insert(100)
+  .insert(88)
+  .insert(93)
+  .insert(89);
+// console.log(bst.find(30));
+// console.log('BFS', bst.bfs());
+// console.log('DFS_PRE_ORDER', bst.dfs_preOrder());
+// console.log('DFS_IN_ORDER', bst.dfs_inOrder());
+// console.log('DFS_POST_ORDER', bst.dfs_postOrder());
+// console.log('min...', bst.min(bst.root));
+const max = bst.max(bst.root);
+console.log('max...', max);
 console.log(bst);
