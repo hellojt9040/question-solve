@@ -115,24 +115,27 @@ class BinarySearchTree {
     return visited;
   }
   delete(value) {
-    this.root = this.deleteNode(this.root, value);
-  }
-  deleteNode(root, val) {
-    if (root.value === null) return null;
-    if (val < root.value) {
-      root.left = this.deleteNode(root.left, val);
-    } else if (val > root.value) {
-      root.right = this.deleteNode(root.right, val);
-    } else {
-      if (!root.left && !root.right) {
-        return null;
+    let deletedNode;
+    const deleteNode = (root, val) => {
+      if (root.value === null) return null;
+      if (val < root.value) {
+        root.left = deleteNode(root.left, val);
+      } else if (val > root.value) {
+        root.right = deleteNode(root.right, val);
+      } else {
+        deletedNode = root;
+        if (!root.left && !root.right) {
+          return null;
+        }
+        if (!root.left) return root.right;
+        if (!root.right) return root.left;
+        root.value = this.min(root.right);
+        root.right = deleteNode(root.right, root.value);
       }
-      if (!root.left) return root.right;
-      if (!root.right) return root.left;
-      root.value = this.min(root.right);
-      root.right = this.deleteNode(root.right, root.value);
-    }
-    return root;
+      return root;
+    };
+    this.root = deleteNode(this.root, value);
+    return deletedNode;
   }
 }
 
