@@ -62,14 +62,14 @@ class BinarySearchTree {
     if (root.left) {
       return this.min(root.left);
     } else {
-      return root;
+      return root.value;
     }
   }
   max(root) {
     if (root.right) {
       return this.max(root.right);
     } else {
-      return root;
+      return root.value;
     }
   }
   bfs() {
@@ -114,6 +114,26 @@ class BinarySearchTree {
     traverse(this.root);
     return visited;
   }
+  delete(value) {
+    this.root = this.deleteNode(this.root, value);
+  }
+  deleteNode(root, val) {
+    if (root.value === null) return null;
+    if (val < root.value) {
+      root.left = this.deleteNode(root.left, val);
+    } else if (val > root.value) {
+      root.right = this.deleteNode(root.right, val);
+    } else {
+      if (!root.left && !root.right) {
+        return null;
+      }
+      if (!root.left) return root.right;
+      if (!root.right) return root.left;
+      root.value = this.min(root.right);
+      root.right = this.deleteNode(root.right, root.value);
+    }
+    return root;
+  }
 }
 
 const bst = new BinarySearchTree();
@@ -134,6 +154,6 @@ bst
 // console.log('DFS_IN_ORDER', bst.dfs_inOrder());
 // console.log('DFS_POST_ORDER', bst.dfs_postOrder());
 // console.log('min...', bst.min(bst.root));
-const max = bst.max(bst.root);
-console.log('max...', max);
+// console.log('max...', bst.max(bst.root));
+console.log(bst.delete(85));
 console.log(bst);
