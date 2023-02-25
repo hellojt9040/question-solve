@@ -16,7 +16,11 @@ import './style.css';
 // import './Stack/StackWIth2Queue';
 // import './Queue/Queue';
 
-import './BST/BST';
+// import './BST/BST';
+
+// import './Heap/Heap';
+
+import './DP/CoinChange/NoOfWays';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
