@@ -137,20 +137,63 @@ class BinarySearchTree {
     this.root = deleteNode(this.root, value);
     return deletedNode;
   }
+  findSecondLargest(root) {
+    if (root.right.right) {
+      return this.findSecondLargest(root.right);
+    }
+    if (root.right) {
+      return root;
+    }
+  }
+  height(root) {
+    if (!root) return -1;
+    if (!root.left && !root.right) return 0;
+    if (!root.left) return 1 + this.height(root.right);
+    if (!root.right) return 1 + this.height(root.left);
+    return 1 + Math.max(this.height(root.left), this.height(root.right));
+  }
+  maxDepth(node) {
+    if (node == null) return 0;
+    else {
+      /* compute the depth of each subtree */
+      let lDepth = this.maxDepth(node.left);
+      let rDepth = this.maxDepth(node.right);
+
+      /* use the larger one */
+      if (lDepth > rDepth) return lDepth + 1;
+      else return rDepth + 1;
+    }
+  }
+  checkBalanced(root) {
+    const helper = (root, depth) => {
+      if (!root) return depth;
+      const left = helper(root.left, depth + 1);
+      const right = helper(root.right, depth + 1);
+      if (left === -1 || right === -1 || Math.abs(left - right) > 1) return -1;
+      return Math.max(left, right);
+    };
+    return helper(root, 0) >= 0;
+  }
 }
 
 const bst = new BinarySearchTree();
-bst
-  .insert(22)
-  .insert(49)
-  .insert(85)
-  .insert(66)
-  .insert(95)
-  .insert(90)
-  .insert(100)
-  .insert(88)
-  .insert(93)
-  .insert(89);
+// bst
+//   .insert(22)
+//   .insert(49)
+//   .insert(85)
+//   .insert(66)
+//   .insert(95)
+//   .insert(90)
+//   .insert(100)
+//   .insert(88)
+//   .insert(93)
+//   .insert(89);
+
+bst.insert(15).insert(20).insert(10).insert(12).insert(5); //.insert(6)//.insert(7);
+// .insert(7)
+// .insert(88)
+// .insert(93)
+// .insert(89);
 // console.log(bst.find(30));
 // console.log('BFS', bst.bfs());
 // console.log('DFS_PRE_ORDER', bst.dfs_preOrder());
@@ -158,5 +201,10 @@ bst
 // console.log('DFS_POST_ORDER', bst.dfs_postOrder());
 // console.log('min...', bst.min(bst.root));
 // console.log('max...', bst.max(bst.root));
-console.log(bst.delete(85));
+// console.log(bst.delete(85));
+// console.log(bst.findSecondLargest(bst.root));
+// console.log('height', bst.height(bst.find(15)));
+// console.log('maxDepth', bst.maxDepth(bst.root));
+// console.log('maxDepth', bst.maxDepth(bst.find(89)));
+console.log('balanced', bst.checkBalanced(bst.root));
 console.log(bst);
