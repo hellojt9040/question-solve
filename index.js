@@ -20,7 +20,13 @@ import './style.css';
 
 // import './Heap/Heap';
 
-import './DP/CoinChange/NoOfWays';
+// import './DP/CoinChange/NoOfWays';
+
+// import './DP/SubSequence';
+import './DP/sequence';
+
+
+
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
