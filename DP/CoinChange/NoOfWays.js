@@ -1,4 +1,5 @@
 function coinChange(coins, value) {
+  // combination
   const ways = new Array(value + 1).fill(0); // Initialize array to 0s
   ways[0] = 1; // There is only 1 way to make change for 0
 

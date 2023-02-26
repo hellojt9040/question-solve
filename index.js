@@ -21,12 +21,12 @@ import './style.css';
 // import './Heap/Heap';
 
 // import './DP/CoinChange/NoOfWays';
+import './DP/CoinChange/TargetSumSubSet';
 
 // import './DP/SubSequence';
-import './DP/sequence';
+// import './DP/sequence';
 
-
-
+// import './Recursion/TargetSumSubSet';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
