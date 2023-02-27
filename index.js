@@ -22,12 +22,16 @@ import './style.css';
 
 // import './DP/CoinChange/NoOfWays';
 // import './DP/CoinChange/TargetSumSubSet';
-import './DP/CoinChange/Greedy';
+// import './DP/CoinChange/Greedy';
 
 // import './DP/SubSequence';
 // import './DP/sequence';
 
 // import './Recursion/TargetSumSubSet';
+
+// import './FrequencyCounter/IsPossibleFormLetters';
+// import './FrequencyCounter/FindDuplicates';
+import './FrequencyCounter/FindPair';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
