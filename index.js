@@ -21,7 +21,8 @@ import './style.css';
 // import './Heap/Heap';
 
 // import './DP/CoinChange/NoOfWays';
-import './DP/CoinChange/TargetSumSubSet';
+// import './DP/CoinChange/TargetSumSubSet';
+import './DP/CoinChange/Greedy';
 
 // import './DP/SubSequence';
 // import './DP/sequence';
