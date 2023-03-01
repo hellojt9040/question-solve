@@ -31,7 +31,9 @@ import './style.css';
 
 // import './FrequencyCounter/IsPossibleFormLetters';
 // import './FrequencyCounter/FindDuplicates';
-import './FrequencyCounter/FindPair';
+// import './FrequencyCounter/FindPair';
+
+import './Trie/Trie';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
