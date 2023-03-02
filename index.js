@@ -1,7 +1,9 @@
 // Import stylesheets
 import './style.css';
 // import './SLL/SLL';
-import './SLL/Intersection';
+// import './SLL/Intersection';
+import './SLL/mergeSort';
+
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/sortedFrequency';
