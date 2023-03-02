@@ -1,6 +1,7 @@
 // Import stylesheets
 import './style.css';
 // import './SLL/SLL';
+import './SLL/Intersection';
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/sortedFrequency';
@@ -33,7 +34,7 @@ import './style.css';
 // import './FrequencyCounter/FindDuplicates';
 // import './FrequencyCounter/FindPair';
 
-import './Trie/Trie';
+// import './Trie/Trie';
 
 // Write Javascript code!
 const appDiv = document.getElementById('app');
