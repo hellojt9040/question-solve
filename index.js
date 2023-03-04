@@ -2,7 +2,10 @@
 import './style.css';
 // import './SLL/SLL';
 // import './SLL/Intersection';
-import './SLL/mergeSort';
+// import './SLL/mergeSort';
+// import './SLL/deletectLoop';
+// import './SLL/circular';
+import './SLL/NthNodeFromEnd';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
