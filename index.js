@@ -7,7 +7,9 @@ import './style.css';
 // import './SLL/circular';
 // import './SLL/NthNodeFromEnd';
 // import './SLL/getMiddle';
-import './SLL/reverse';
+// import './SLL/reverse';
+// import './SLL/rotateK';
+import './SLL/reverseWithStartEnd';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
