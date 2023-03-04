@@ -5,7 +5,9 @@ import './style.css';
 // import './SLL/mergeSort';
 // import './SLL/deletectLoop';
 // import './SLL/circular';
-import './SLL/NthNodeFromEnd';
+// import './SLL/NthNodeFromEnd';
+// import './SLL/getMiddle';
+import './SLL/reverse';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
