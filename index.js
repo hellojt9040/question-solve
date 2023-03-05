@@ -9,7 +9,11 @@ import './style.css';
 // import './SLL/getMiddle';
 // import './SLL/reverse';
 // import './SLL/rotateK';
-import './SLL/reverseWithStartEnd';
+// import './SLL/reverseWithStartEnd';
+// import './SLL/reverseKthTime';
+// import './SLL/removeDuplicateSorted';
+// import './SLL/removeDuplicateUnsorted';
+import './SLL/addOneToNumber';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
