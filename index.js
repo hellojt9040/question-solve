@@ -13,7 +13,8 @@ import './style.css';
 // import './SLL/reverseKthTime';
 // import './SLL/removeDuplicateSorted';
 // import './SLL/removeDuplicateUnsorted';
-import './SLL/addOneToNumber';
+// import './SLL/addOneToNumber';
+import './SLL/reverseDoublyLinkedList';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
