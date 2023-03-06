@@ -15,7 +15,8 @@ import './style.css';
 // import './SLL/removeDuplicateUnsorted';
 // import './SLL/addOneToNumber';
 // import './SLL/reverseDoublyLinkedList';
-import './SLL/removeLoop';
+// import './SLL/removeLoop';
+import './SLL/palindrome';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
