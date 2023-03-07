@@ -16,7 +16,12 @@ import './style.css';
 // import './SLL/addOneToNumber';
 // import './SLL/reverseDoublyLinkedList';
 // import './SLL/removeLoop';
-import './SLL/palindrome';
+// import './SLL/palindrome';
+
+
+import './Array/setMatrtixZero';
+
+
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
