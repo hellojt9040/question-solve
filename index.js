@@ -19,7 +19,8 @@ import './style.css';
 // import './SLL/palindrome';
 
 
-import './Array/setMatrtixZero';
+// import './Array/setMatrtixZero';
+import './Array/pascalTriangle';
 
 
 
