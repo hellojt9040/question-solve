@@ -20,7 +20,8 @@ import './style.css';
 
 
 // import './Array/setMatrtixZero';
-import './Array/pascalTriangle';
+// import './Array/pascalTriangle';
+import './Array/nextPermutation';
 
 
 
