@@ -21,7 +21,8 @@ import './style.css';
 // import './Array/setMatrtixZero';
 // import './Array/pascalTriangle';
 // import './Array/nextPermutation';
-import './Array/maxSubArray';
+// import './Array/maxSubArray';
+import './Array/sortColors';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
