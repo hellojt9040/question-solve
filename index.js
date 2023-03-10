@@ -18,12 +18,10 @@ import './style.css';
 // import './SLL/removeLoop';
 // import './SLL/palindrome';
 
-
 // import './Array/setMatrtixZero';
 // import './Array/pascalTriangle';
-import './Array/nextPermutation';
-
-
+// import './Array/nextPermutation';
+import './Array/maxSubArray';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
