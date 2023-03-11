@@ -23,7 +23,8 @@ import './style.css';
 // import './Array/nextPermutation';
 // import './Array/maxSubArray';
 // import './Array/sortColors';
-import './Array/stockBuySell';
+// import './Array/stockBuySell';
+import './Array/rotateMatrix';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
