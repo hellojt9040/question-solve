@@ -22,7 +22,8 @@ import './style.css';
 // import './Array/pascalTriangle';
 // import './Array/nextPermutation';
 // import './Array/maxSubArray';
-import './Array/sortColors';
+// import './Array/sortColors';
+import './Array/stockBuySell';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
