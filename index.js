@@ -24,7 +24,8 @@ import './style.css';
 // import './Array/maxSubArray';
 // import './Array/sortColors';
 // import './Array/stockBuySell';
-import './Array/rotateMatrix';
+// import './Array/rotateMatrix';
+import './Array/mergeIntervals';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
