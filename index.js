@@ -26,7 +26,9 @@ import './style.css';
 // import './Array/stockBuySell';
 // import './Array/rotateMatrix';
 // import './Array/mergeIntervals';
-import './Array/mergeSorted';
+// import './Array/mergeSorted';
+// import './Array/findDuplicate';
+import './Array/missingDuplicate';
 
 // import './DivideConqure/CountZeros';
 // import './DivideConqure/CountZeros';
